@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Use of meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Bonsai Blooms</title>
+
+    <!-- Links of external CSS, JavaScript and fontawesome package  -->
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <script src="../JS/Brain.js"></script>
+    <link rel="stylesheet" href="../fonts&icons/all_icons/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar section containing links to other pages -->
+    <div id="navbar">
+
+        <!-- Use of inline CSS -->
+        <!-- Due to this anchor tag in logo section when clicked on it, it returns us to home page -->
+        <a style="text-decoration: none;" href="Home.html">
+            <div id="logo">
+                <img src="../images/logo/bonsai.png" alt="logo">
+                <h3>Bonsai Blooms</h3>
+            </div>
+        </a>
+
+        <!-- links of main pages in the navigation bar -->
+        <div id="bar">
+            <ul>
+                <a href="Home.html"><li class="navs"> Home </li></a>
+                <a href="Product.html"><li class="navs"> Products</li></a>
+                <a href="Blog.html"><li class="navs">Blog</li></a>
+                <a href="Research.html"><li class="navs"> Research</li></a>
+                <a href="About Us.html"><li class="navs">About Us</li></a>
+            </ul>
+        </div>
+
+        <!-- Cart button that opens product page -->
+        <div id="side">
+            <div class="side1" id="cart"><a href="Product.html">
+                    <button class="btn1"><i class="fa-solid fa-cart-shopping fa-xl "></i></button></a>
+            </div>
+
+            <!-- Dropdown button that shows notifications when clicked on the button -->
+            <div class="dropdown">
+                <button onclick="myFunction1()" class="btn1 side1 dropbtn"> <i
+                        <i class=" dropbtn fa-regular fa-bell fa-2xl"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <h4 style="padding: 0.8rem;">NOTIFICATIONS!!</h4>
+                    <hr>
+                    <ul style="list-style-type: disc;">
+                        <li class="drop"><a href="#">signUp to create and organize your profile</a></li>
+                        <hr>
+                        <li class="drop"><a href="#">New plant alert!!</a></li>
+                        <hr>
+                        <li class="drop"><a href="#">Click on the message icon whenever you need help</a>></li>
+                        <hr>
+                        <li class="drop"><a href="#">Welcome to Blonsai Blooms</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="side1" id="profile"><a href="#footer1">
+                    <button class="btn1"><i class="fa-solid fa-phone fa-xl"></i></button></a>
+            </div>
+
+            <!-- login button that opens a new page to input login details -->
+            <div class="side1" id="login">
+                <a href="Login.html" target="_blank"><button class="btn1"><i class="fa-solid fa-user fa-xl">
+                        </i></button></a>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="topbtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div id="Rsection">
+        <h2>References We Looked Through When Creating Our Website</h2>
+    </div>
+
+    <!-- Description of research done for designing the website -->
+    <div id="Rsection1">
+
+        <!-- Image and link of reference website along with our own website to show where and how much change we made -->
+        <div id="Rsec1" class="Rsec-1">
+            <div class="Rsec-2">
+                <img src="../images/researchP/navR.png" alt="">
+                 <a href="https://webtechnepal.com/" target="_blank"> <p>1a. Website: Webtech Nepal</p></a>
+                <p>This is the reference we looked through for our navigation section.</p>
+            </div>
+            <div class="Rsec-2">
+                <img src="../images/researchP/navA.png" alt="">
+                 <a href="Home.html" target="_blank"> <p>1b. Website: Bonsai Blooms</p></a>
+                <p>This is how our navigation turned out with some features changed from the reference.</p>
+            </div>
+        </div>
+
+        <div id="Rsec2" class="Rsec-1">
+            <div class="Rsec-2">
+                <img src="../images/researchP/footerR.png" alt="">
+                 <a href="https://foodmandu.com/" target="_blank"> <p>2a. Website: Foodmandu</p></a>
+                <p>This is the reference we looked through for our footer section.</p>
+            </div>
+            <div class="Rsec-2">
+                <img src="../images/researchP/footerA.png" alt="">
+                 <a href="Home.html" target="_blank"> <p>2b. Website: Bonsai Blooms </p> </a>
+                <p>This is how our footer section turned out with some features changed from the reference.</p>
+            </div>
+        </div>
+
+        <div id="Rsec3" class="Rsec-1">
+            <div class="Rsec-2">
+                <img src="../images/researchP/bestsellerR.png" alt="">
+                 <a href="https://thulo.com/" target="_blank"> <p>3a. Website: Thulo</p></a>
+                <p>This is the reference we looked through for our featured product section in home and product page.</p>
+            </div>
+            <div class="Rsec-2">
+                <img src="../images/researchP/bestsellerA.png" alt="">
+                 <a href="Product.html" target="_blank"> <p>3b. Website: Bonsai Blooms</p></a>
+                <p>This is how our featured product section for home and product page turned out with some features changed
+                from the reference.</p>
+            </div>
+        </div>
+
+
+        <div id="Rsec4" class="Rsec-1">
+            <div class="Rsec-2">
+                <img src="../images/researchP/categoryR.png" alt="">
+                 <a href="https://hamrobazaar.com/" target="_blank"> <p>4a. Website: Hamrobazar</p></a>
+                <p>This is the reference we looked through for our categories section of the product page.</p>
+            </div>
+            <div class="Rsec-2">
+                <img src="../images/researchP/categoryA.png" alt="">
+                 <a href="Product.html" target="_blank"> <p>4b. Website: BonsaiBlooms</p></a>
+                <p>This is how our categories section of product page turned out with some features changed from the
+                reference.</p>
+            </div>
+        </div>
+
+        <div id="Rsec5" class="Rsec-1">
+            <div class="Rsec-2">
+                <img src="../images/researchP/productR.png" alt="">
+                 <a href="https://www.daraz.com.np/" target="_blank"><p>5a. Website: Daraz</p></a>
+                <p>This is the reference we looked through for our individual products detail of the product page.
+            </div>
+            <div class="Rsec-2">
+                <img src="../images/researchP/productA.png" alt="">
+                 <a href="Product.html" target="_blank"><p>5b. Website: Bonsai Blooms</p></a>
+                <p>This is how our individual product details of product page turned out with some features changed from
+                the reference.</p>
+            </div>
+        </div>
+
+        <div id="Rsec6" class="Rsec-1">
+            <div class="Rsec-2">
+                <img src="../images/researchP/blogR.png" alt="">
+                 <a href="https://nicepage.com/features" target="_blank"><p>6a. Website: Nicepage</p></a>
+                <p>This is the reference we looked through for our blog page</p>
+            </div>
+            <div class="Rsec-2">
+                <img src="../images/researchP/blogA.png" alt="">
+                 <a href="Blog.html" target="_blank"> <p>6b. Website: Bonsai Blooms</p></a>
+                <p>This is how our blog page turned out with some features changed from the reference.</p>
+            </div>
+        </div>
+
+        <div id="Rsec7" class="Rsec-1">
+            <div class="Rsec-2">
+                <img src="../images/researchP/aboutusR.png" alt="">
+                 <a href="https://www.olenepal.org/about-us/team/" target="_blank"> <p>7a. Website: OLE Nepal</p></a>
+                <p>This is the reference we looked through for our portfolio section.</p>
+            </div>
+            <div class="Rsec-2">
+                <img src="../images/researchP/aboutusA.png" alt="">
+                 <a href="About Us.html" target="_blank"> <p>7b. Website: Bonsai Blooms</p></a>
+                <p>This is how our portfolio section turned out with some features changed from the reference.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <br>
+        <hr>
+        <br>
+        <div id="footer1">
+
+            <div class="footer-1">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Home.html">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li><a href="Product.html">
+                            <p>Products</p>
+                        </a>
+                    </li>
+                    <li><a href="Blog.html">
+                            <p>Blog</p>
+                        </a>
+                    </li>
+                    <li><a href="Research.html">
+                            <p>Research</p>
+                        </a>
+                    </li>
+                    <li><a href="About Us.html">
+                            <p>About Us</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-1">
+                <h4>Payment Options</p>
+                </h4>
+                <ul>
+                    <li>Esewa</li>
+                    <li>Khalti</li>
+                    <li>IME Pay</li>
+                    <li>Cash On Delivery</li>
+                    <li>Credit Cards</li>
+                </ul>
+            </div>
+
+            <div class="footer-1">
+                <h4>Connect through:</h4>
+                <button><a href="https://www.facebook.com/" target="_blank"><img
+                            src="../images/logo/3146790_facebook_logo_icon.png" alt=""></button></a>
+                <button><a href="https://www.instagram.com/" target="_blank"><img
+                            src="../images/logo/3146786_instagram_logo_icon.png" alt=""></button></a>
+                <button><a href="https://twitter.com/" target="_blank"><img
+                            src="../images/logo/3146787_twitter_logo_icon.png" alt=""></button></a>
+                <button><a href="https://www.linkedin.com/" target="_blank"><img
+                            src="../images/logo/5296501_linkedin_network_linkedin logo_icon.png" alt=""></button></a>
+                <p>Free Shipping on Fridays</p>
+                <p>Secure Online Payment</p>
+                <p>Quick Customer Service</p>
+
+            </div>
+
+            <div class="footer-1">
+                <ul>
+                    <li>
+                        <h4>Bonsai Blooms</h4>
+                    </li>
+                    <li>
+                        <p>Ecommerce Business</p>
+                    </li>
+                    <li>
+                        <p>Lakeside, Pokhara</p>
+                    </li>
+                    <li>
+                        <p>061-586541</p>
+                    </li>
+                    <li>
+                        <p>9869998160</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-1">
+                <a href="About Us.html">
+                    <h4>Team Members</h4>
+                </a>
+                <ul>
+                    <li>
+                        <p>Amita Thapa</p>
+                    </li>
+                    <li>
+                        <p>Reshma Adhikari</p>
+                    </li>
+                    <li>
+                        <p>Samana Bhatta</p>
+                    </li>
+                    <li>
+                        <p>Sarita Baral</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="footer2">
+            <p>Copyright &copy 2023 Bonsai Blooms. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Internal JavaScript -->
+    <script>
+
+        //JavaScript for notificaiton dropdown
+        function myFunction1() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        // Get the button:
+        let mybutton = document.getElementById("topbtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+</body>
+
+</html>

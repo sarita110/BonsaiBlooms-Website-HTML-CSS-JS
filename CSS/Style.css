@@ -1,0 +1,662 @@
+/*External CSS for the whole website*/
+
+/*This CSS is applied to all the elements of HTML*/
+* {
+    margin: 0%;
+    padding: 0%;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*This CSS code with only element specified without any id or class is applied whenever the element is used*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Applying the downloaded fonts*/
+
+@font-face {
+    font-family: DancingScript;
+    src: url(../fonts&icons/homeP/DancingScript.ttf);
+}
+
+@font-face {
+    font-family: Prata;
+    src: url(../fonts&icons/homeP/Prata-Regular.ttf);
+}
+
+/*CSS for the whole home page*/
+
+/*CSS for the navigation section of home page*/
+
+#navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 4.1rem;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(122, 160, 138, 0.959);
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    position: sticky;
+    z-index: 5;
+}
+
+#logo {
+    display: inline-flex;
+    padding: 0.2rem 1rem;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+    align-items: center;
+    font-size: 1.75rem;
+    font-family: DancingScript;
+    background-color: white;
+    border-radius: 1.5rem;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#logo img {
+    height: 3.2rem;
+    width: 3.2rem;
+    padding-right: 0.5rem;
+}
+
+#bar {
+    border-radius: 1rem;
+    background-color: rgba(213, 236, 213, 0.856);
+    display: block;
+    height: 3.2rem;
+    width: auto;
+    justify-items: center;
+    font-family:  Prata;
+    font-size: 1.4rem;
+}
+
+.navs {
+    padding:0.65rem 2rem;
+}
+
+.navs:hover {
+    background-color: rgba(252, 248, 248, 0.856);
+    cursor: pointer;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#navbar #bar ul li a {
+    font-size: 1.39rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: Prata;
+}
+
+#side {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.side1 {
+    padding: 0.3rem;
+}
+
+.btn1 {
+    padding: 0.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border-color: rgb(158, 150, 150);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ebe6e6;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0.2rem 0.2rem rgba(102, 98, 98, 0.308);
+    z-index: 3;
+    border-radius: 1rem;
+}
+
+.show {
+    display: block;
+}
+
+#myDropdown ul {
+    flex-direction: column;
+}
+
+#myDropdown ul li a {
+    text-decoration: none;
+    font-family: Prata;
+    
+}
+
+.drop {
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.drop:hover{
+    background-color: rgba(214, 213, 213, 0.925);
+}
+
+/*CSS for the first section below navigation bar of home page*/
+#section1 {
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+    z-index: 0;
+}
+
+#sec1 {
+    position: relative;
+    font-size: 1.9rem;
+    padding-top: 0.2rem;
+    color: rgb(170, 32, 59);
+    display: block;
+    white-space: nowrap;
+    animation: mymove 15s linear infinite;
+}
+
+@keyframes mymove {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        transform: translate(0%, 0);
+    }
+}
+
+/*CSS for go to top button*/
+#topbtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Placeing the button at the bottom of the page */
+    right: 20px;
+    /* Placeing the button 30px from the right */
+    z-index: 99;
+    /* Makeing sure it does not overlap */
+    border: none;
+    /* Removeing borders */
+    outline: none;
+    /* Removeing outline */
+    background-color: rgb(177, 175, 175);
+    /* setting a background color */
+    color: white;
+    /* Setting a Text color */
+    cursor: pointer;
+    /* Adding a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#topbtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+
+/*CSS for the third section below navigation bar of home page*/
+
+#section3 h3 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#sec3a {
+    padding: 0.7rem 0rem;
+    display: inline-flex;
+    align-items: centre;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#sec3a div {
+    padding: 1rem;
+    background-color: rgb(193, 228, 216);
+}
+
+.sec3-b {
+    color: rgb(110, 32, 68);
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
+}
+
+#sec3a img {
+    padding-top: 0.5rem;
+    height: 5rem;
+    width: 5.5rem;
+}
+
+.sec3-a {
+    padding: 1.3rem;
+}
+
+
+
+
+/*CSS for footer section*/
+#footer1 {
+    display: inline-flex;
+    font-size: 1.3rem;
+    padding-left: 3.5rem;
+}
+
+#footer1 img {
+    height: 2rem;
+    width: 2rem;
+}
+
+#footer1 button {
+    border: none;
+}
+
+.footer-1 {
+    padding: 0.8rem 2.5rem;
+}
+
+#footer2 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+/*CSS for Product page*/
+#Psection1 {
+    display: inline-flex;
+    font-size: 1.3rem;
+    width: 84rem;
+
+}
+
+
+.Psec-1 {
+    display: inline-flex;
+}
+
+.Psec-2 {
+    font-size: 1.4rem;
+}
+
+#Psec1 {
+    display: block;
+    background-color: rgb(216, 230, 230);
+    position: relative;
+    top: 4.1rem;
+    left: 0rem;
+    z-index: 1;
+    position: sticky;
+    height: 43rem;
+    width: 20rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#Psec2 {
+    text-align: center;
+}
+
+#Psec2a img {
+    height: 15rem;
+    width: 18rem;
+    margin: 0.4rem 1rem;
+    padding-top: 1rem;
+}
+
+.Pitem {
+    box-shadow: 0.3rem 0.5rem 0.3rem 0rem rgba(167, 160, 160, 0.726);
+    margin: 1rem 0.9rem;
+    align-items: center;
+    border: solid;
+    border-width: 0.08rem;
+    border-color: #cfcbcb;
+    cursor: pointer;
+}
+
+.Pitem:hover {
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+}
+
+.actualP {
+    color: rgb(255, 74, 2);
+}
+
+.discountedP {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: rgb(141, 138, 138);
+}
+
+.BuyNow {
+    color: rgb(160, 51, 51);
+    background-color: #dfdcdc;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    height:2rem;
+    width:8rem; 
+    text-align: center; 
+    margin: 0rem; 
+    font-size: 1.45rem;
+}
+
+.BuyNow:hover {
+    background-color: rgb(160, 51, 51);
+    color: aliceblue;
+}
+
+
+/*CSS for Blog Page*/
+#Blog {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+#Bsection1 {
+    margin: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+#Bsection2 {
+    display: inline-flex;
+    text-align: justify;
+}
+
+#Bsec1 {
+    display: block;
+    width: 50rem;
+    margin-right: 2rem;
+}
+
+
+#Bsec2 {
+    display: inline-flex;
+}
+
+.slider {
+    height: 400px;
+    width: 20rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px grey;
+}
+
+#more1{display: none;}
+#more2{display: none;}
+#more3{display: none;}
+
+#Bsection3 {
+    display: inline-flex;
+    margin: 1rem 2rem;
+}
+
+#Bsection3 div {
+    margin: 1rem;
+    width: 23rem;
+    text-align: justify;
+}
+
+#Bsection3 img{
+    width: 23rem;
+    height: 12rem;
+
+}
+
+#Bsection3 button{
+    width: 23rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#Bsection3 button:hover{
+    background-color: #e0dcdc;
+}
+
+#Bsection4{
+    background-color: #d7fd9ab7;
+    border-radius: 1rem;
+    margin: 1rem 5rem;
+    margin-left: 6rem;
+    padding: 1rem;
+}
+
+
+/*CSS for Research Page*/
+
+#Rsection{
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: cursive;
+    text-shadow: 0.5px 0.5px 3px rgb(187, 221, 253);
+}
+
+#Rsection1{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#Rsection1 a p{
+    font-size: 1.6;
+    font-style: italic;
+}
+
+#Rsection1 img{
+    margin:2rem 5rem;
+    width: 65rem;
+    box-shadow: 0.3rem 0.5rem 0.3rem 0rem rgba(167, 160, 160, 0.726);
+}
+
+.Rsec-1{
+    border-style: solid;
+    border-width: 0.08rem;
+    margin:3rem 3rem;
+    border-radius: 1rem;
+    border-color: #d1ceceda;
+}
+
+.Rsec-2{
+    border-style: solid;
+    border-width: 0.08rem;
+    border-radius: 0.7rem;
+    border-color: #d1ceceda;
+}
+
+#Rsec4 img{
+    margin:2rem 3rem ;
+    width: 20rem;
+    height: 40rem;
+}
+
+#Rsec4 .Rsec-2{
+    border: none;
+}
+
+#Rsec4{
+    align-items: center;
+    width: 52rem;
+    display: inline-flex;
+}
+
+
+
+/*CSS for AboutUs Page*/
+#AboutUs-1 {
+    padding-left: 14rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+    left: 0rem;
+    top: 4rem;
+    position: sticky;
+    z-index: 2;
+    background-color: rgb(227, 248, 202);
+}
+
+#AboutUs-2 {
+    display: inline-flex;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#Aside {
+    height: 18rem;
+    background-color: antiquewhite;
+    margin-left: 1.5rem;
+    margin-top: 1.3rem;
+    padding-top: 7rem;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
+    position: relative;
+    left: 0rem;
+    top: 13rem;
+    position: sticky;
+    z-index: 2.5;
+}
+
+#Asection1 {
+    display: inline-flex;
+}
+
+.Asec-1 img {
+    height: 22rem;
+    width: 16rem
+}
+
+.Asec-1 {
+    height: 28.5rem;
+    margin: 2rem 0.5rem;
+    margin-bottom: 0rem;
+    padding-top: 1rem;
+    background-color: rgba(222, 231, 222, 0.842);
+    ;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 4.4rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    height: 21.8rem;
+    width: 15.7rem;
+    padding: 0.1rem;
+    background: rgba(113, 116, 113, 0.644);
+    font-size: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.overlay span {
+    color: rgb(250, 246, 246);
+}
+
+.Asec-1:hover .overlay {
+    opacity: 1;
+}
+
+.SocialMedia button {
+    display: inline-flex;
+    height: 2.2rem;
+    width: 2.2rem;
+    border: none;
+    background-color: none;
+    margin-top: 0.2rem;
+}
+
+.SocialMedia img:hover{
+    box-shadow: 0.09rem 0.05rem 0.05rem 0rem rgba(167, 160, 160, 0.726);
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+}
+
+.SocialMedia img {
+    height: 2rem;
+    width: 2rem;
+}
+
+#Asection2 {
+    display: inline-flex;
+    margin: 0rem 2rem;
+    margin-top: 1rem;
+}
+
+#Asec2a {
+    padding: 1rem;
+    text-align: left;
+    background-color: #ebe6e6;
+    border: rgb(209, 202, 202);
+}
+
+.Asec2-a {
+    margin: 0rem 1rem;
+}
+
+.Asec2-a:hover img {
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05);
+    /* Safari 3-8 */
+    transform: scale(1.05);
+    box-shadow: 0.3rem 0.5rem 0.3rem 0rem rgba(167, 160, 160, 0.726);
+}
+
+#Abtn {
+    display: inline-flex;
+    height: 4rem;
+    width: 10rem;
+}
+
+#Abtn div {
+    margin: 0rem 0.2rem;
+}
+
+#Abtn input, button:hover{
+    cursor: pointer;
+}

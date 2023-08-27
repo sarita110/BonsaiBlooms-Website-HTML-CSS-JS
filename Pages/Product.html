@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Use of meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Bonsai Blooms</title>
+
+    <!-- Link of External CSS -->
+    <link rel="stylesheet" href="../CSS/Style.css">
+
+    <!-- Link of External JavaScript -->
+    <script src="../JS/Brain.js"></script>
+
+    <!-- Link of downloaded package of fonts and icons -->
+    <link rel="stylesheet" href="../fonts&icons/all_icons/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation Section of Product Page -->
+    <div id="navbar">
+
+        <!-- Use of inline CSS -->
+        <!-- Due to this anchor tag in logo section when clicked on it, it returns us to home page -->
+        <a style="text-decoration: none;" href="Home.html">
+            <div id="logo">
+                <img src="../images/logo/bonsai.png" alt="logo">
+                <h3>Bonsai Blooms</h3>
+            </div>
+        </a>
+
+        <!-- links of main pages in the navigation bar -->
+        <div id="bar">
+            <ul>
+                <a href="Home.html"><li class="navs"> Home </li></a>
+                <a href="Product.html"><li class="navs"> Products</li></a>
+                <a href="Blog.html"><li class="navs">Blog</li></a>
+                <a href="Research.html"><li class="navs"> Research</li></a>
+                <a href="About Us.html"><li class="navs">About Us</li></a>
+            </ul>
+        </div>
+
+        <!-- Cart button that opens product page -->
+        <div id="side">
+            <div class="side1" id="cart"><a href="Product.html">
+                    <button class="btn1"><i class="fa-solid fa-cart-shopping fa-xl "></i></button></a>
+            </div>
+
+            <!-- Dropdown button that shows notifications when clicked on the button -->
+            <div class="dropdown">
+                <button onclick="myFunction1()" class="btn1 side1 dropbtn"> <i
+                        <i class=" dropbtn fa-regular fa-bell fa-2xl"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <h4 style="padding: 0.8rem;">NOTIFICATIONS!!</h4>
+                    <hr>
+                    <ul style="list-style-type: disc;">
+                        <li class="drop"><a href="#">signUp to create and organize your profile</a></li>
+                        <hr>
+                        <li class="drop"><a href="#">New plant alert!!</a></li>
+                        <hr>
+                        <li class="drop"><a href="#">Click on the message icon whenever you need help</a>></li>
+                        <hr>
+                        <li class="drop"><a href="#">Welcome to Blonsai Blooms</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="side1" id="profile"><a href="#footer1">
+                    <button class="btn1"><i class="fa-solid fa-phone fa-xl"></i></button></a>
+            </div>
+
+            <!-- login button that opens a new page to input login details -->
+            <div class="side1" id="login">
+                <a href="Login.html" target="_blank"><button class="btn1"><i class="fa-solid fa-user fa-xl">
+                        </i></button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to scroll to top -->
+    <button onclick="topFunction()" id="topbtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Section below navigation bar -->
+    <div id="Psection1">
+
+        <!-- Section of Categories for easy access to different product section -->
+        <div id="Psec1">
+            <p style="font-size: 2.3rem;">Categories</p>
+            <ul>
+                <a href="#NewArrivals">
+                    <li>
+                        <p style="font-size: 1.6rem;">New Arrivals</p>
+                        <p>Trident</p>
+                        <p>Yew</p>
+                        <p>Rhododendron</p>
+                        <p>Cotoneaster</p>
+                        <p>Fiscus</p>
+                    </li>
+                </a>
+                <a href="#BestSellers">
+                    <li>
+                        <p style="font-size: 1.6rem;">Best Sellers</p>
+                        <p>desert rose</p>
+                        <p>pine</p>
+                        <p>bougainvillea</p>
+                        <p>azalea</p>
+                        <p>juniper</p>
+                    </li>
+                </a>
+                <a href="#SpeciesCategories">
+                    <li>
+                        <p style="font-size: 1.8rem;">Species Categories</p>
+                        <ul>
+                            <a href="#Broadleaf">
+                                <li>Broadleaf Evergreen Species</li>
+                            </a>
+                            <a href="#Deciduous">
+                                <li>Deciduous Tree Species</li>
+                            </a>
+                            <a href="#Pines">
+                                <li>Pines and conifers</li>
+                            </a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="table.html" target="_blank"> <p style="font-size: 1.8rem;">Spreadsheet</p><p style="font-size: 1.2rem;">(Details of Products)</p></a>
+            </ul>
+        </div>
+
+        <!-- Section side of categories with different featured products -->
+        <div id="Psec2">
+
+            <!-- A gif image to make the website attractive -->
+            <div>
+                <img style="width:40rem; height:18rem; " src="../images/productP/productGif.gif" alt="">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="Psec2a">
+
+                <!-- Section containing newly arrived products -->
+                <div id="NewArrivals">
+                    <h2>New Arrivals</h2>
+                    <div class="Psec-1">
+                        <div id="Trident" class="Pitem">
+                            <img src="../images/productP/New Arrivals/trident maple(acer buergerianum).jpg" alt="">
+                            <div>
+                                <p>Trident Maple</p>
+                                <div>
+                                    <span class="actualP">Rs.3800</span><span class="discountedP">Rs.4000</span>
+                                </div>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Pitem">
+                            <img src="../images/productP/New Arrivals/yew(taxus or taxaceae).jpg" alt="">
+                            <div>
+                                <p>Yew</p>
+                                <p class="actualP">Rs.2900</p>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="Pitem">
+                            <img src="../images/productP/New Arrivals/azalea(rhododendron).jpg" alt="">
+                            <div>
+                                <p>Azalea</p>
+                                <div>
+                                    <span class="actualP">Rs.5500</span><span class="discountedP">Rs.5600</span>
+                                </div>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Psec-1">
+                        <div class="Pitem">
+                            <img src="../images/productP/New Arrivals/brazilian rain tree(Pithecellobium tortum).jpg"
+                                alt="">
+                            <div>
+                                <p>Brazilian Rain Tree</p>
+                                <p class="actualP">Rs.3000</p>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Pitem">
+                            <img src="../images/productP/New Arrivals/cotoneaster(cotoneaster).jpg" alt="">
+                            <div>
+                                <p>Contoneaster</p>
+                                <div>
+                                    <p class="actualP">Rs.4700</p>
+                                </div>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="Pitem">
+                            <img src="../images/productP/New Arrivals/ficus(ficus retusa or ginseng).jpg" alt="">
+                            <div>
+                                <p>Fiscus</p>
+                                <div>
+                                    <span class="actualP">Rs.2500</span><span class="discountedP">Rs.2750</span>
+                                </div>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Best Sellers Products -->
+                <div id="BestSellers">
+                    <h2>Best Sellers</h2>
+                    <div class="Psec-1">
+                        <div class="Pitem">
+                            <img src="../images/productP/BestSellers/desert rose(adenium obesum).jpg" alt="">
+                            <div>
+                                <p>Desert Rose</p>
+                                <p class="actualP">Rs.5700</p>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Pitem">
+                            <img src="../images/productP/BestSellers/pine(pinus spp).png" alt="">
+                            <div>
+                                <p>Pine</p>
+                                <div>
+                                    <span class="actualP">Rs.4100</span><span class="discountedP">Rs.4210</span>
+                                </div>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="Pitem">
+                            <img src="../images/productP/BestSellers/bougainvillea(bougainvillea).jpg" alt="">
+                            <div>
+                                <p>Bougainvillea</p>
+                                <div>
+                                    <span class="actualP">Rs.4850</span><span class="discountedP">Rs.4900</span>
+                                </div>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Psec-1">
+                        <div class="Pitem">
+                            <img src="../images/productP/BestSellers/buddhist pine(podocarpus).jpg" alt="">
+                            <div>
+                                <p>Budhhist Pine</p>
+                                <p class="actualP">Rs.3200</p>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="Pitem">
+                            <img src="../images/productP/BestSellers/azalea(Rhododendron spp).png" alt="">
+                            <div>
+                                <p>Rhododendron</p>
+                                <div>
+                                    <span class="actualP">Rs.6000</span><span class="discountedP">Rs.6150</span>
+                                </div>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="Pitem">
+                            <img src="../images/productP/BestSellers/juniper(juniperus).jpg" alt="">
+                            <div>
+                                <p>Juniper</p>
+                                <p class="actualP">Rs.2700</p>
+                                <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                    <button style=" border: none" onclick="myFunction2()">
+                                        <p class="BuyNow"
+                                            style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                            Buy Now</p>
+                                    </button>
+                                    <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                            style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                            src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section containing all products categorized according to species -->
+                <div id="SpeciesCategories">
+                    <h2>Species Categories</h2>
+                    <div id="Broadleaf">
+                        <h2>Broadleaf Evergreen Species</h2>
+                        <div class="Psec-1">
+                            <div class="Pitem">
+                                <img src="../images/productP/Broadleaf Evergreen Species/azalea(rhododendron).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Azalea</p>
+                                    <div>
+                                        <span class="actualP">Rs.5500</span><span class="discountedP">Rs.5600</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Broadleaf Evergreen Species/ficus(ficus retusa or ginseng).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Fiscus</p>
+                                    <div>
+                                        <span class="actualP">Rs.2500</span><span class="discountedP">Rs.2750</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Broadleaf Evergreen Species/cotoneaster(cotoneaster).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Contoneaster</p>
+                                    <p class="actualP">Rs.4700</p>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Psec-1">
+                            <div class="Pitem">
+                                <img src="../images/productP/Broadleaf Evergreen Species/water jasmine(wrightia religiosa).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Water Jasmine</p>
+                                    <p class="actualP">Rs.3900</p>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Broadleaf Evergreen Species/bougainvillea(bougainvillea).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Bougainvillea</p>
+                                    <div>
+                                        <span class="actualP">Rs.4850</span><span class="discountedP">Rs.4900</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Broadleaf Evergreen Species/brazilian rain tree(Pithecellobium tortum).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Brazilian Rain Tree</p>
+                                    <p class="actualP">Rs.3000</p>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Deciduous">
+                        <h2>Deciduous Tree Species</h2>
+                        <div class="Psec-1">
+                            <div class="Pitem">
+                                <img src="../images/productP/Deciduous Tree Species/cherry(prunus,sakura).jpg" alt="">
+                                <div>
+                                    <p>Cherry</p>
+                                    <div>
+                                        <span class="actualP">Rs.5700</span><span class="discountedP">Rs.5890</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Deciduous Tree Species/chinese elm(ulmus parviflora).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Chinese Elm</p>
+                                    <p class="actualP">Rs.2950</p>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Deciduous Tree Species/desert rose(adenium obesum).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Desert Rose</p>
+                                    <p class="actualP">Rs.5700</p>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Psec-1">
+                            <div class="Pitem">
+                                <img src="../images/productP/Deciduous Tree Species/oak(quercus).jpg" alt="">
+                                <div>
+                                    <p>Oak</p>
+                                    <div>
+                                        <span class="actualP">Rs.3100</span><span class="discountedP">Rs.3250</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Deciduous Tree Species/trident maple(acer buergerianum).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Trident Maple</p>
+                                    <div>
+                                        <span class="actualP">Rs.3800</span><span class="discountedP">Rs.4000</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Deciduous Tree Species/weeping willow(salix).jpg" alt="">
+                                <div>
+                                    <p>Weeping Willow</p>
+                                    <div>
+                                        <span class="actualP">Rs.4050</span><span class="discountedP">Rs.4150</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Pines">
+                        <h2>Pines and conifers</h2>
+                        <div class="Psec-1">
+                            <div class="Pitem">
+                                <img src="../images/productP/Pines and conifers/buddhist pine(podocarpus).jpg" alt="">
+                                <div>
+                                    <p>Buddhist Pine</p>
+                                    <div>
+                                        <span class="actualP">Rs.5300</span><span class="discountedP">Rs.5410</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Pines and conifers/cedar(cedrus).jpg" alt="">
+                                <div>
+                                    <p>Cedar</p>
+                                    <p class="actualP">Rs.4900</p>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Pines and conifers/hinoki cypress(chamaecyparis).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Hinoki Cypress</p>
+                                    <div>
+                                        <span class="actualP">Rs.3900</span><span class="discountedP">Rs.4000</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Psec-1">
+                            <div class="Pitem">
+                                <img src="../images/productP/Pines and conifers/juniper(juniperus).jpg" alt="">
+                                <div>
+                                    <p>Juniper</p>
+                                    <p class="actualP">Rs.2700</p>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Pines and conifers/larch and golden larch(larix).jpg"
+                                    alt="">
+                                <div>
+                                    <p>Golden Larch</p>
+                                    <div>
+                                        <span class="actualP">Rs.3500</span><span class="discountedP">Rs.3600</span>
+                                    </div>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="Pitem">
+                                <img src="../images/productP/Pines and conifers/yew(taxus or taxaceae).jpg" alt="">
+                                <div>
+                                    <p>Yew</p>
+                                    <p class="actualP">Rs.2900</p>
+                                    <div style="display: inline-flex; margin:0.5rem 0rem;">
+                                        <button style=" border: none" onclick="myFunction2()">
+                                            <p class="BuyNow"
+                                                style="height:2rem; width:8rem; text-align: center; margin: 0rem; font-size: 1.45rem;">
+                                                Buy Now</p>
+                                        </button>
+                                        <button style="margin-left: 1rem; cursor: pointer; border: none;"><img
+                                                style="height:1.5rem; width:1.8rem; margin: 0rem; padding: 0rem;"
+                                                src="../images/logo/Fav1.png" onclick="changeImage(this)"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section of Product page -->
+    <footer>
+        <br>
+        <hr>
+        <div id="footer1">
+
+            <div class="footer-1">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Home.html">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li><a href="Product.html">
+                            <p>Products</p>
+                        </a>
+                    </li>
+                    <li><a href="Blog.html">
+                            <p>Blog</p>
+                        </a>
+                    </li>
+                    <li><a href="Research.html">
+                            <p>Research</p>
+                        </a>
+                    </li>
+                    <li><a href="About Us.html">
+                            <p>About Us</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-1">
+                <h4>Payment Options</p>
+                </h4>
+                <ul>
+                    <li>Esewa</li>
+                    <li>Khalti</li>
+                    <li>IME Pay</li>
+                    <li>Cash On Delivery</li>
+                    <li>Credit Cards</li>
+                </ul>
+            </div>
+
+            <div class="footer-1">
+                <h4>Connect through:</h4>
+                <button><a href="https://www.facebook.com/" target="_blank"><img
+                            src="../images/logo/3146790_facebook_logo_icon.png" alt=""></button></a>
+                <button><a href="https://www.instagram.com/" target="_blank"><img
+                            src="../images/logo/3146786_instagram_logo_icon.png" alt=""></button></a>
+                <button><a href="https://twitter.com/" target="_blank"><img
+                            src="../images/logo/3146787_twitter_logo_icon.png" alt=""></button></a>
+                <button><a href="https://www.linkedin.com/" target="_blank"><img
+                            src="../images/logo/5296501_linkedin_network_linkedin logo_icon.png" alt=""></button></a>
+                <p>Free Shipping on Fridays</p>
+                <p>Secure Online Payment</p>
+                <p>Quick Customer Service</p>
+
+            </div>
+
+            <div class="footer-1">
+                <ul>
+                    <li>
+                        <h4>Bonsai Blooms</h4>
+                    </li>
+                    <li>
+                        <p>Ecommerce Business</p>
+                    </li>
+                    <li>
+                        <p>Lakeside, Pokhara</p>
+                    </li>
+                    <li>
+                        <p>061-586541</p>
+                    </li>
+                    <li>
+                        <p>9869998160</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-1">
+                <a href="About Us.html">
+                    <h4>Team Members</h4>
+                </a>
+                <ul>
+                    <li>
+                        <p>Amita Thapa</p>
+                    </li>
+                    <li>
+                        <p>Reshma Adhikari</p>
+                    </li>
+                    <li>
+                        <p>Samana Bhatta</p>
+                    </li>
+                    <li>
+                        <p>Sarita Baral</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="footer2">
+            <p>Copyright &copy 2023 Bonsai Blooms. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Use of internal JavaScript -->
+    <script>
+
+        //JavaScript for scroll to top button
+        // Get the button:
+        let mybutton = document.getElementById("topbtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+</body>
+
+</html>

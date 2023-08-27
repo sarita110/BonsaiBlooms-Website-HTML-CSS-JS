@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Use of meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title of the page  -->
+    <title>Bonsai Blooms</title>
+
+    <!-- Links to external css, javascript, fonts and icons -->
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <script src="../JS/Brain.js"></script>
+    <link rel="stylesheet" href="../fonts&icons/all_icons/css/all.min.css">
+
+    <!-- Use of internal CSS -->
+    <style>
+        #more1 {
+            display: none;
+        }
+
+        #more2 {
+            display: none;
+        }
+
+        #more3 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar of Blog page -->
+    <div id="navbar">
+
+        <!-- Use of inline CSS -->
+        <!-- Due to this anchor tag in logo section when clicked on it, it returns us to home page -->
+        <a style="text-decoration: none;" href="Home.html">
+            <div id="logo">
+                <img src="../images/logo/bonsai.png" alt="logo">
+                <h3>Bonsai Blooms</h3>
+            </div>
+        </a>
+
+        <!-- links of main pages in the navigation bar -->
+        <div id="bar">
+            <ul>
+                <a href="Home.html"><li class="navs"> Home </li></a>
+                <a href="Product.html"><li class="navs"> Products</li></a>
+                <a href="Blog.html"><li class="navs">Blog</li></a>
+                <a href="Research.html"><li class="navs"> Research</li></a>
+                <a href="About Us.html"><li class="navs">About Us</li></a>
+            </ul>
+        </div>
+
+        <!-- Cart button that opens product page -->
+        <div id="side">
+            <div class="side1" id="cart"><a href="Product.html">
+                    <button class="btn1"><i class="fa-solid fa-cart-shopping fa-xl "></i></button></a>
+            </div>
+
+            <!-- Dropdown button that shows notifications when clicked on the button -->
+            <div class="dropdown">
+                <button onclick="myFunction1()" class="btn1 side1 dropbtn"> <i
+                        <i class=" dropbtn fa-regular fa-bell fa-2xl"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <h4 style="padding: 0.8rem;">NOTIFICATIONS!!</h4>
+                    <hr>
+                    <ul style="list-style-type: disc;">
+                        <li class="drop"><a href="#">signUp to create and organize your profile</a></li>
+                        <hr>
+                        <li class="drop"><a href="#">New plant alert!!</a></li>
+                        <hr>
+                        <li class="drop"><a href="#">Click on the message icon whenever you need help</a>></li>
+                        <hr>
+                        <li class="drop"><a href="#">Welcome to Blonsai Blooms</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="side1" id="profile"><a href="#footer1">
+                    <button class="btn1"><i class="fa-solid fa-phone fa-xl"></i></button></a>
+            </div>
+
+            <!-- login button that opens a new page to input login details -->
+            <div class="side1" id="login">
+                <a href="Login.html" target="_blank"><button class="btn1"><i class="fa-solid fa-user fa-xl">
+                        </i></button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to scroll to top -->
+    <button onclick="topFunction()" id="topbtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- The whole blog section -->
+    <div id="Blog">
+        <div id="Bsection1">
+            <h2>THE BLOG</h2>
+            <p>Creative Writings From The Team Of Bonsai Blooms.</p>
+        </div>
+        <hr>
+        <br>
+
+        <div id="Bsection2">
+
+            <!-- Blog section with a blog and image slider at its side -->
+            <div id="Bsec1">
+                <div id="Bsec2">
+                    <div>
+                        <img style="height: 12rem; width: 14rem; margin-right: 0.7rem;"
+                            src="../images/blogP/side/blog1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>About Technology</h3>
+                        <p>
+                            In this 21st century, technology has become a significant part of almost everyone. Since
+                            technology is ever on the phase of development, its progress has been nothing but
+                            incredible, no matter how vastly it changes. Technology means the skill to convey an idea to
+                            reach a goal. But nowadays, the term technology mainly signifies the vast
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p>knowledge of tools, machines, techniques, crafts, systems, and organisation to solve a problem.
+                        It plays a significant role in modern society, influencing various aspects of our daily lives,
+                        such as the way we work, communicate, entertain, and educate ourselves. Technology continues to
+                        evolve rapidly, driven by advancements in scientific research and the increasing availability of
+                        data and computing power. We now have the ability to transform the environment, extend our
+                        lifetime, create big and interconnected societies and even explore various new things about the
+                        universe only because of these advanced technologies.</p>
+                </div>
+            </div>
+
+            <!-- Use of image slider -->
+            <div class="slider">
+                <div id="img">
+                    <img src="../images/blogP/slider/blog5.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="Bsection3" class="blog-container">
+
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="../images/blogP/side/1a.jpg" alt="">
+                </div>
+                <div class="blog-text">
+                    <p>
+                        The advancement in technology has made our lives easier, more comfortable and enjoyable. It has
+                        reduced the effort and time required to complete a task, thus enhancing the quality and
+                        efficiency of work. It vastly made it easy to communicate and remain in touch with people from
+                        all around the world. Technology
+                        <span id="dots1">...</span>
+                        <span id="more1">
+                            now touches all aspects of our lives, whether it is through mobile phones, kettles, kitchen
+                            microwaves, electric cookers, television, water heaters, remote control, fridge, or through
+                            other larger communication systems such as internet facilities, railways, air routes, and so
+                            on. Because of this ever advancing technology and their use in different fields like
+                            medical, industrial, banking, education and others, activities are now performed with more
+                            ease and effeciently. Thus, technology plays an extremely crucial role in the daily lives of
+                            human beings. Due to the pandemic caused by covid-19, the use of technology became more of a
+                            necessity for every individual, to maintain their private and professional life. Since
+                            people were confined to their home, the use of technology became varied and suddenly every
+                            major activites like studying in colleges, working in an office, business in market shifted
+                            to online platform making everyones life easier and risk-free. And even after the pandemic,
+                            the shift remained which is proving to be an asset to learn more efficiently for students,
+                            work remotely when necessary for professionals and spread business while providing services
+                            to large and far-away mass with much help of e-commerce, a powerful aspect of technology.
+                        </span>
+                    </p>
+                    <button onclick="myFunctionB1()" id="Bbtn1">Read more</button>
+                </div>
+            </div>
+
+
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="../images/blogP/side/1b.jpg" alt="">
+                </div>
+                <div class="blog-text">
+                    <p>
+                        Even though technology is seen as a boon for easy and comfortable lifestlye, it comes with its
+                        own flaws.With technology, the efficiency of a task has increased tenfold and this is often the
+                        rationale why thetechnology could be ready to replace humans soon. A rise in technology goes to
+                        make sure that tasks
+                        <span id="dots2">...</span>
+                        <span id="more2">
+                            that humans could do earlier can now be achieved by machines and technology. Thus, creating
+                            a shortage of jobs. The evolution of technology in our world today has created a dependence
+                            on our devices, tools, and processes. Over-reliance on technology can lead to addiction,
+                            particularly with social media and other internet-based platforms. People deal with
+                            different mental health problems, like insecurity, loneliness, underachievement about every
+                            little things about their life due to the constant comparision to other peoples best moments
+                            posted on social media. Excessive use of technology can lead to physical problems as well
+                            such as eye strain, neck and back pain, and poor posture. Especially children are at a great
+                            risk to become victim of cyber crimes as they are naive and get easily influenced by the
+                            unfiltered contents of different social medias. Although technology is already a major part
+                            of ones life, it is impossible to always remain upto date due to its vastness, so one must
+                            be selective about what to focus on.
+                        </span>
+                    </p>
+                    <button onclick="myFunctionB2()" id="Bbtn2">Read more</button>
+                </div>
+            </div>
+
+
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="../images/blogP/side/1c.jpg" alt="">
+                </div>
+                <div class="blog-text">
+                    <p>
+                        People for a long time have been running businesses with a physical setup displaying the
+                        products and selling them locally through stores. But with the advancement of technology, doing
+                        business has been made easy with the help of e-commerce. So to sell our products, Bonsai Plants,
+                        we took this
+                        <span id="dots3">...</span>
+                        <span id="more3">
+                            advantage and created a fully automated website called Bonsai Blooms. Because we made the
+                            whole process of managing the sells digital, we were able to run the business smoothly from
+                            our home and we were able to reach out to customers on globalscale as the products, their
+                            details and updates were present for all to see, save, buy or share at any time they wanted.
+                            And sinc    e it didn't require high level of initial capital we were able to open the business
+                            confidently. This concept provided greater accessibility of products and services and most
+                            importantly flexibility so selling bonsai plants digitally with the help of technology made
+                            a perfect fit for team.
+                        </span>
+                    </p>
+                    <button onclick="myFunctionB3()" id="Bbtn3">Read more</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overall conclusion of the blog section -->
+        <div id="Bsection4">
+            <h3>Overall Conclusion</h3>
+            <p>Technology is an amazing asset for our daily life which has been developed and adopted because, among
+                other things, it improves efficiency, convenience, communication, and access to information. It is
+                also
+                the driving force behind innovation, economic growth, and global development. Businesses are one of
+                the
+                most benefited ones from technology due to its global reach with minimal investment. So life is
+                almost
+                impossible without the help these technologies provide, but one should always be careful about its
+                effect on both mental and physical so as to prevent oneself from over-reliance on technology. So, if
+                you
+                learn how to manage it properly, technology can be a great friend in the twenty-first century.</p>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+        <br>
+        <hr>
+        <br>
+        <div id="footer1">
+            <div class="footer-1">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Home.html">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li><a href="Product.html">
+                            <p>Products</p>
+                        </a>
+                    </li>
+                    <li><a href="Blog.html">
+                            <p>Blog</p>
+                        </a>
+                    </li>
+                    <li><a href="Research.html">
+                            <p>Research</p>
+                        </a>
+                    </li>
+                    <li><a href="About Us.html">
+                            <p>About Us</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-1">
+                <h4>Payment Options</p>
+                </h4>
+                <ul>
+                    <li>Esewa</li>
+                    <li>Khalti</li>
+                    <li>IME Pay</li>
+                    <li>Cash On Delivery</li>
+                    <li>Credit Cards</li>
+                </ul>
+            </div>
+
+            <div class="footer-1">
+                <h4>Connect through:</h4>
+                <button><a href="https://www.facebook.com/" target="_blank"><img
+                            src="../images/logo/3146790_facebook_logo_icon.png" alt=""></button></a>
+                <button><a href="https://www.instagram.com/" target="_blank"><img
+                            src="../images/logo/3146786_instagram_logo_icon.png" alt=""></button></a>
+                <button><a href="https://twitter.com/" target="_blank"><img
+                            src="../images/logo/3146787_twitter_logo_icon.png" alt=""></button></a>
+                <button><a href="https://www.linkedin.com/" target="_blank"><img
+                            src="../images/logo/5296501_linkedin_network_linkedin logo_icon.png" alt=""></button></a>
+                <p>Free Shipping on Fridays</p>
+                <p>Secure Online Payment</p>
+                <p>Quick Customer Service</p>
+
+            </div>
+
+            <div class="footer-1">
+                <ul>
+                    <li>
+                        <h4>Bonsai Blooms</h4>
+                    </li>
+                    <li>
+                        <p>Ecommerce Business</p>
+                    </li>
+                    <li>
+                        <p>Lakeside, Pokhara</p>
+                    </li>
+                    <li>
+                        <p>061-586541</p>
+                    </li>
+                    <li>
+                        <p>9869998160</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-1">
+                <a href="About Us.html">
+                    <h4>Team Members</h4>
+                </a>
+                <ul>
+                    <li>
+                        <p>Amita Thapa</p>
+                    </li>
+                    <li>
+                        <p>Reshma Adhikari</p>
+                    </li>
+                    <li>
+                        <p>Samana Bhatta</p>
+                    </li>
+                    <li>
+                        <p>Sarita Baral</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="footer2">
+            <p>Copyright &copy 2023 Bonsai Blooms. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Internal JavaScript -->
+    <script>
+
+        // Get the button:
+        let mybutton = document.getElementById("topbtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        //Javascript for image slider
+        var images = ["blog1.jpg", "blog2.jpg", "blog3.jpg", "blog4.jpg", "blog5.jpg"];
+        var x = 0;
+        var imgs = document.getElementById("img");
+        setInterval(slider, 3000);
+
+        function slider() {
+            if (x < images.length) {
+                x = x + 1;
+                console.log("value of x--->", x);
+            } else {
+                x = 1;
+                console.log("value of x--->", x);
+            }
+            imgs.innerHTML = "<img src=../images/blogP/slider/" + images[x - 1] + ">";
+        }
+
+        
+    </script>
+</body>
+
+</html>
